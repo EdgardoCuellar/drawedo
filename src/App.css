@@ -21,14 +21,12 @@ html {
 
 .App {
   text-align: center;
-  margin-top: 0.5%;
   margin-left: 10%;
   width: 80%;
   backdrop-filter: blur(1px);
 }
 
 .Main-App {
-  padding-bottom: 3.5%;
 }
 
 .App-header {

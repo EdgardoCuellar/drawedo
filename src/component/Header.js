@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/Header.css"
+import Logo from "../assets/img/logo.png"
 import {
   Link
 } from "react-router-dom";
@@ -11,7 +12,10 @@ class Header extends Component {
         <div className="HeaderMain">
           <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap');</style>
           <Link to="/">
-              <h1>Tartine Network</h1>
+            <div className="top-header">
+                <img className="logo-header" src={Logo} />
+                <h1>Tartine Network</h1>
+            </div>
           </Link>
           <div className="HeaderContainer">
               <Link to={"/"} className="HeaderText">Home</Link>

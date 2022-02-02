@@ -24,6 +24,18 @@ h1{
     font-size: 30px;
 }
 
+.top-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-header {
+    width: 30px;
+    height: 30px;
+}
+
 .HeaderText{
     display: block;
     width: 70px;
