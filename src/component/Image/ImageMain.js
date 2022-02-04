@@ -5,7 +5,6 @@ import "../../styles/ImageMain.css"
 import BlockChoice from "../Home/BlockChoice";
 import takePhoto from "../../assets/img/take_photo.png"
 import upload from "../../assets/img/upload.png"
-import FileUploadPage from "../FileUploadPage";
 
 class ImageMain extends Component {
 
@@ -25,14 +24,14 @@ class ImageMain extends Component {
       this.state.selectedFile,
       this.state.selectedFile.name
     );
-
     console.log(this.state.selectedFile);
     axios.post("api/uploadfile", formData);
   };
 
   infoFile = () => {
     if (this.state.selectedFile) {
-      if (this.state.selectedFile.type === 'image/jpeg' || this.state.selectedFile.type === 'image/png') {
+      if (this.state.selectedFile.type === 'image/jpeg' 
+       || this.state.selectedFile.type === 'image/png') {
         return (
           <span className="image-infos">
             {this.state.selectedFile.name}
@@ -42,7 +41,7 @@ class ImageMain extends Component {
       else {
         return (
           <span className="image-infos">
-            file need to be an image 
+            file needs to be an image 
           </span> 
         )
       }
@@ -74,8 +73,6 @@ class ImageMain extends Component {
           </label>
           <input type="file" id="upload-button" style={{display: 'none'}} 
                  onChange={this.onFileChange} accept="image/x-png,image/jpeg" />
-
-          <FileUploadPage />
         </div>
 
         <div className="text-analyze">
