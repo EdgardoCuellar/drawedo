@@ -49,7 +49,7 @@ class ImageMain extends Component {
     else {
       return (
         <span className="image-infos">
-          nothing
+          nothing.jpg
         </span>
       )
     }
@@ -60,10 +60,22 @@ class ImageMain extends Component {
       <div className="ImageMain">
         <h2>Images</h2>
         <div className="container">
-          <BlockChoice name={"Take a pic"} 
-                       img_link={takePhoto} 
-                       description={"Pour l'instant flemme de faire celui là"} 
-                       link_to={""}/>
+            <BlockChoice name={"Take a pic"} 
+                        img_link={takePhoto} 
+                        description={"Pour l'instant flemme de faire celui là"} 
+                        link_to={""}/>
+                        
+          <div className="text-analyze">
+            <div className="text-file">
+              {this.infoFile()}
+              <button className="text-send" onClick={this.onFileUpload}>
+                send
+              </button>
+            </div>
+            <span className="text-block">
+              text block
+            </span>
+          </div>
 
           <label htmlFor={"upload-button"}>
             <BlockChoice name={"Upload"} 
@@ -73,16 +85,6 @@ class ImageMain extends Component {
           </label>
           <input type="file" id="upload-button" style={{display: 'none'}} 
                  onChange={this.onFileChange} accept="image/x-png,image/jpeg" />
-        </div>
-
-        <div className="text-analyze">
-          {this.infoFile()}
-          <button className="text-send" onClick={this.onFileUpload}>
-            send
-          </button>
-          <span className="text-block">
-            text block
-          </span>
         </div>
       </div>
     );
