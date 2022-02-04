@@ -11,15 +11,15 @@ class Home extends Component {
         <div className="container">
           <BlockChoice name={"Game"} 
                        img_link={"https://cdn.discordapp.com/attachments/718214061283737712/937028286939287632/Daco_4300598.png"} 
-                       description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit quis lectus eu dapibus. Phasellus scelerisque lectus a odio malesuada, vitae molestie ipsum gravida."} 
+                       description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit quis lectus eu dapibus."} 
                        link_to={"game"}/>
           <BlockChoice name={"Draw"} 
                        img_link={"https://cdn.discordapp.com/attachments/718214061283737712/937027342201655356/SeekPng.com_patriots-logo-png_295350.png"} 
-                       description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit quis lectus eu dapibus. Phasellus scelerisque lectus a odio malesuada, vitae molestie ipsum gravida."} 
+                       description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit quis lectus eu dapibus."} 
                        link_to={"draw"}/>
           <BlockChoice name={"Images"}
                        img_link={"https://cdn.discordapp.com/attachments/718214061283737712/938107948184514580/photo.png"} 
-                       description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit quis lectus eu dapibus. Phasellus scelerisque lectus a odio malesuada, vitae molestie ipsum gravida."} 
+                       description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit quis lectus eu dapibus."} 
                        link_to={"image"}/>
         </div>
       </div>

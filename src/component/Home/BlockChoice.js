@@ -1,9 +1,8 @@
-import React, { Component } from "react";
 import "../../styles/Home/BlockChoice.css"
 import {Link} from "react-router-dom";
 
 function BlockChoice({name, img_link, description, link_to}) {
-    if (link_to == ""){
+    if (link_to === ""){
         return (
             <div className="containerBlock">
                 <h3>{name}</h3>

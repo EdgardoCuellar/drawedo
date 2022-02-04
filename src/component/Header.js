@@ -11,11 +11,9 @@ class Header extends Component {
     return (
         <div className="HeaderMain">
           <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto&display=swap');</style>
-          <Link to="/">
-            <div className="top-header">
-                <img className="logo-header" src={Logo} />
-                <h1>Tartine Network</h1>
-            </div>
+          <Link to="/" className="top-header">
+              <img className="logo-header" alt="logo" src={Logo} />
+              <h1>Tartine Network</h1>
           </Link>
           <div className="HeaderContainer">
               <Link to={"/"} className="HeaderText">Home</Link>

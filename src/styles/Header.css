@@ -10,37 +10,36 @@ a{
     align-items: center;
 }
 
-.HeaderContainer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-left: 25%;
-}
-
-h1{
-    color: #263238;
-    margin-left: 10px;
-    font-size: 30px;
-}
-
 .top-header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 25%;
+}
+
+.HeaderContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+}
+
+h1{
+    color: #263238;
+    font-size: 1.7em;
 }
 
 .logo-header {
     width: 30px;
     height: 30px;
+    margin-left: -10px;
 }
 
 .HeaderText{
     display: block;
-    width: 70px;
-    margin-left: 60%;
-    font-size: 20px;
+    font-size: 1.3em;
     color: #212121;
     font-family: 'Open Sans', sans-serif;
 }

@@ -6,7 +6,7 @@
 }
 
 h2{
-    font-size: 55px;
+    font-size: 48px;
     color: #263238;
 }
 
@@ -22,4 +22,28 @@ h2{
 .GameZone img {
     width: 720px;
     height: 480px;
+}
+
+.text-analyze{
+    margin-top: 20px;
+    width: 50%;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-infos{
+    width: 35%;
+    background-color: chartreuse;
+}
+
+.text-send {
+    width: 15%;
+    background-color: red;
+}
+
+.text-block {
+    width: 50%;
+    background-color: blue;
 }
